@@ -1,17 +1,6 @@
 # DATATHON_TEAM1
 
-## 수정사항.
-### 4월 16일 오류
-- 스탯티즈 크롤링 selenium 사용으로 IP 차단 (Colab 사용)
-- 해결책 : Local에서 코드 구현 (성공)
-- 결론 : 코랩에서는 스탯티즈 크롤링이 지원이 안되는 것을 확인
 
-### 4월 17일 오류 (14:40)
-- 로컬에서 너무 많은 요청을 한 탓인지, IP Block이 되는 것을 확인
-
-### 4월 22일 오류 해결
-- IP 변경 후에야 스탯티즈 사이트 접속 가능
-- 스탯티즈 크롤링 지원 X, 너무 빠른 시간 내에 Drag & Drop하면 너무 많은 요청이 걸려 잠시 Ban이 될 수 있음
 
 ## 가설 9. FA선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다.
 ### 가설 9:  FA선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다.
@@ -23,68 +12,67 @@
 - 투수는 ERA, FIP, 종합 WAR / 야수는 종합 WAR를 사용하여, 성적을 판단.
     - 결과
         - 투수
-            - ER
+            - ERA
                 
-                ![FA 계약 후 연봉 증가율 vs ERA 변화.png](attachment:cbb33472-3b32-4a71-83f4-b5a8a2b5026c:FA_계약_후_연봉_증가율_vs_ERA_변화.png)
+                ![FA 계약 후 연봉 증가율 vs ERA 변화](https://github.com/user-attachments/assets/a0efacdd-0f49-4742-84e0-9836945bf19a)
                 
-                ![ERA 성과평가별 선수 수.png](attachment:40da7665-6e88-4bf0-a5b2-8379f13ba148:ERA_성과평가별_선수_수.png)
+                ![ERA 성과평가별 선수 수](https://github.com/user-attachments/assets/958170f1-f578-4361-bfa1-dbf4bdfda2de)
+
                 
             - FIP
                 
-                ![FA 계약 후 연봉 증가율 vs FIP 변화.png](attachment:dccfc1b2-6067-4234-80b6-ccdbd78dd8e8:FA_계약_후_연봉_증가율_vs_FIP_변화.png)
+                ![FA 계약 후 연봉 증가율 vs FIP 변화](https://github.com/user-attachments/assets/0113ed96-8547-43fc-9ea5-dacc52ca57d5)
+
+                ![FIP 성과평가별 선수 수](https://github.com/user-attachments/assets/c1ec80b8-4db7-400c-b8c1-b1e4e8895ae2)
+
                 
-                ![FIP 성과평가별 선수 수.png](attachment:3c4ad49d-182a-4cf5-81b2-85c221e3a538:FIP_성과평가별_선수_수.png)
                 
             - 종합 WAR
                 
-                ![FA 계약 후 연봉 증가율 vs WAR 변화.png](attachment:d79daef2-8aac-46d0-b4b7-fae47ec32f9a:FA_계약_후_연봉_증가율_vs_WAR_변화.png)
-                
-                ![선수별 WAR당 연봉 변화.png](attachment:7b4d6168-d549-407f-8b21-2acd018a8f25:선수별_WAR당_연봉_변화.png)
-                
-                ![WAR 성과평가별 선수 수.png](attachment:d18c623e-35d5-4e3d-afe4-8463373b02fe:WAR_성과평가별_선수_수.png)
-                
+                ![FA 계약 후 연봉 증가율 vs WAR 변화](https://github.com/user-attachments/assets/f9c51f07-b18b-4b5b-bedd-1886b504ddad)
+
+                ![선수별 WAR당 연봉 변화](https://github.com/user-attachments/assets/9a40010a-b0f0-43b7-96e0-a25db0d782c3)
+
+                ![WAR 성과평가별 선수 수](https://github.com/user-attachments/assets/ef1ae7d3-66bb-406a-994b-8d7115c33714)
+
+          
             - WAR 향상 인원 중 연봉 향상도
             
-            ![WAR 향상 선수의 WAR 향상도 및 연봉 변화.png](attachment:339da522-7fea-4cee-af55-ef6e647c995e:WAR_향상_선수의_WAR_향상도_및_연봉_변화.png)
+            ![WAR 향상 선수의 WAR 향상도 및 연봉 변화](https://github.com/user-attachments/assets/c028e7fc-6c6c-48fa-93b0-fdb861edd010)
+
             
             - 연봉 증가와 성적 지표 변화 간의 상관관계
             
-            ![연봉 증가와 성적 지표 변화간의 상관관계.png](attachment:5f26ba49-2dc3-4140-99e8-9a17865372a5:연봉_증가와_성적_지표_변화간의_상관관계.png)
-            
+            ![연봉 증가와 성적 지표 변화간의 상관관계](https://github.com/user-attachments/assets/6f574ae2-1c5e-4f44-ad08-bf9dac07fde3)
+
             - 피어슨 상관계수의 p-value 결과
             
-            ![image.png](attachment:79c68647-b2e4-4015-92d4-d2ab6690555e:image.png)
-            
-            ![image.png](attachment:743d2c45-a318-4cd6-a2fe-bd9c788a8e4c:image.png)
+            ![피어슨 상관계수의 p-value 결과](https://github.com/user-attachments/assets/1f3c13a8-21fc-46fa-9af1-1667893db6c5)
+
             
         - 야수
             - 종합 WAR
                 
-                ![FA 계약 후 연봉증가율 vs WAR 변화.png](attachment:397cffb2-f311-47df-94e1-91e5b5c1e8f2:FA_계약_후_연봉증가율_vs_WAR_변화.png)
-                
-                ![선수별 WAR당 연봉 변화.png](attachment:d71e49c2-c09d-4db2-be1e-5a2b046c2e2b:선수별_WAR당_연봉_변화.png)
-                
-                ![성과평가별 선수 수.png](attachment:9eb41068-f68a-4591-bc15-40e82b043453:성과평가별_선수_수.png)
-                
+                ![FA 계약 후 연봉증가율 vs WAR 변화](https://github.com/user-attachments/assets/9267d78b-d5d5-4a67-85a4-3d89fd17c1eb)
+
+                ![선수별 WAR당 연봉 변화](https://github.com/user-attachments/assets/1ebff206-128f-45a1-8263-e861391fbae8)
+
+                ![성과평가별 선수 수](https://github.com/user-attachments/assets/ca956166-b8a6-4765-ae10-a03fa5dca26d)
+
             - WAR 향상 인원 중 연봉 향상도
                 
-                ![FA 계약 후 WAR가 향상된 선수들의 연봉 변화.png](attachment:a4ebf608-2a7a-4ba3-aeb7-1005177ec243:FA_계약_후_WAR가_향상된_선수들의_연봉_변화.png)
+                ![FA 계약 후 WAR가 향상된 선수들의 연봉 변화](https://github.com/user-attachments/assets/cedef433-c9cf-4d4c-9cf3-de5cdd804baa)
                 
-                ![WAR 향상 선수의 WAR 향상도 및 연봉 변화.png](attachment:5ea83728-96ab-46d3-86a9-fec1e051f9fc:WAR_향상_선수의_WAR_향상도_및_연봉_변화.png)
+                ![WAR 향상 선수의 WAR 향상도 및 연봉 변화](https://github.com/user-attachments/assets/050ff164-cdbf-42f5-be43-86e38152c7cc)
                 
-                ![성과평가별 선수 수.png](attachment:1fe6b569-cfdd-4d15-8d9d-261fbe6c06b3:성과평가별_선수_수.png)
-                
-            
             - 연봉 증가와 성적 지표 변화 간의 상관관계
-                
-                ![연봉 증가와 성적 지표 변화 간의 상관관계.png](attachment:4334a9a1-f67f-4ed8-b6d0-56c33a8b9d21:연봉_증가와_성적_지표_변화_간의_상관관계.png)
-                
+            - 
+                ![연봉 증가와 성적 지표 변화 간의 상관관계](https://github.com/user-attachments/assets/e31ddede-0983-4b10-93d6-d1ce80e7092d)                
             
             - 피어슨 상관계수의 p-value 결과
+
+                ![피어슨 상관계수의 p-value 결과](https://github.com/user-attachments/assets/762f03f5-ced2-44a1-9614-72f2ad8bba49)
                 
-                ![image.png](attachment:71dfe1ef-e912-4083-bf51-25c9d2a0b90f:image.png)
-                
-        
         ⇒ 투수, 야수 모두 성적과 관련하여 귀무가설이 채택되어, FA 선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다 라는 가설은 틀리게 됩니다. 
         
         ⇒ 아마 FA 금액이 오른 선수들은 성적을 제외하고도, 여러 가지 복합 요인들로 인하여, FA 가격이 예상보다 오르게 되었고, 각 해의 컨디션에 따라 성적이 좌지우지 된다. (부상 포함)
@@ -130,33 +118,50 @@
                 - wRC+ : 120 이상
         - 각 유형별 결과
             1. 교타자
-                
-                ![교타자 AVG vs OBP.png](attachment:653431f6-e532-4e01-adfc-510bb9b3f2ec:교타자_AVG_vs_OBP.png)
-                
-                ![교타자 FA & wRC+.png](attachment:e532ec90-385e-4943-bb58-246115b83118:교타자_FA__wRC.png)
-                
+               
+                ![교타자 AVG vs OBP](https://github.com/user-attachments/assets/34782107-b04f-4834-b696-d75a97bef11b)
+
+                ![교타자 FA & wRC+](https://github.com/user-attachments/assets/25938092-5b81-4042-be3a-68097b56e19d)
+
             
-            1. 중장거리형 타자
+            2. 중장거리형 타자
                 
-                ![중장거리형 타자 AVG vs OBP.png](attachment:ad8a3b91-dd0b-431a-b324-6d228b05316a:중장거리형_타자_AVG_vs_OBP.png)
-                
-                ![중장거리형 타자 FA & wRC+.png](attachment:e4f2492f-e771-4ac0-a142-9eb472f9869a:중장거리형_타자_FA__wRC.png)
-                
+                ![중장거리형 타자 AVG vs OBP](https://github.com/user-attachments/assets/f114667a-48a7-4c12-9da0-77aff5c4c3c8)
+
+                ![중장거리형 타자 FA & wRC+](https://github.com/user-attachments/assets/fb13ff04-85fe-45c4-9300-40f48845122a)
+
             
-            1. 거포형 타자
+            3. 거포형 타자
                 
-                ![거포형 타자 AVG vs OBP.png](attachment:e79d5e0f-b732-4547-aebd-d27b5e9fdacf:거포형_타자_AVG_vs_OBP.png)
-                
-                ![거포형 타자 FA & wRC+.png](attachment:f9ca030d-6ef6-400d-84bc-fa5ac5fec657:거포형_타자_FA__wRC.png)
-                
+                ![거포형 타자 AVG vs OBP](https://github.com/user-attachments/assets/cff860be-bf54-467e-8105-b6888e441e43)
+
+                ![거포형 타자 FA & wRC+](https://github.com/user-attachments/assets/9320f785-b162-4d0b-adcc-73da7bdcd078)
+
+        ![FA 선수 유형별 비율](https://github.com/user-attachments/assets/5b75994c-4a67-41cd-a1ba-d48b85fe37b5)
         
-        ![FA 선수 유형별 비율.png](attachment:ea572a3d-6eb9-4526-9c43-8e79f144afd6:FA_선수_유형별_비율.png)
-        
-        ![FA 선수 유형별 평균 계약 총액과 년수 비교.png](attachment:23e9b9ba-9b56-44cd-97a2-7f2d82fb4d32:FA_선수_유형별_평균_계약_총액과_년수_비교.png)
-        
+        ![FA 선수 유형별 평균 계약 총액과 년수 비교](https://github.com/user-attachments/assets/96a04018-aba5-42a7-9a2b-c8bfb46ef61b)
+
         - 정규성 검정 시행 후, 등분상 가정을 사용하였을 때, 0.0377로 0.05 이하이기에, 귀무가설을 기각하여, 해당 가설이 통계적으로 옳음을 나타내었다.
         
-        ![가설 검정(등분산 가정).png](attachment:c5ed556a-b1f5-4b55-83f7-3828428f2a6a:가설_검정(등분산_가정).png)
+        ![가설 검정(등분산 가정)](https://github.com/user-attachments/assets/00dac4d6-bbd8-44d7-b94f-a6c1c4d26d47)
+
+ 
+
+
+
+
+## 수정사항.
+### 4월 16일 오류
+- 스탯티즈 크롤링 selenium 사용으로 IP 차단 (Colab 사용)
+- 해결책 : Local에서 코드 구현 (성공)
+- 결론 : 코랩에서는 스탯티즈 크롤링이 지원이 안되는 것을 확인
+
+### 4월 17일 오류 (14:40)
+- 로컬에서 너무 많은 요청을 한 탓인지, IP Block이 되는 것을 확인
+
+### 4월 22일 오류 해결
+- IP 변경 후에야 스탯티즈 사이트 접속 가능
+- 스탯티즈 크롤링 지원 X, 너무 빠른 시간 내에 Drag & Drop하면 너무 많은 요청이 걸려 잠시 Ban이 될 수 있음
         
         ![교타자 VS 중장거리형 타자와 거포형 타자 FA 계약 총액 분포.png](attachment:67ddb4d4-f98d-4fca-95f2-9b72c2f5c0ec:교타자_VS_중장거리형_타자와_거포형_타자_FA_계약_총액_분포.png)
         
