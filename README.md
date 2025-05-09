@@ -12,10 +12,11 @@
 ## 목차
 - [개요](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%9C%EC%9A%94)
 - [프로젝트 설명](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EB%AA%85)
-- [가설](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%80%EC%84%A4)
+- [가설](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%80%EC%84%A4
+)
 - [딥러닝 및 머신러닝](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B0%8F-%EB%94%A5%EB%9F%AC%EB%8B%9D)
-- [기대 효과](https://github.com/DAB-4th/DATATHON_TEAM1/blob/main/README.md#%EA%B8%B0%EB%8C%80-%ED%9A%A8%EA%B3%BC)
-- [프로젝트 기여도](https://github.com/DAB-4th/DATATHON_TEAM1/blob/main/README.md#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B8%B0%EC%97%AC%EB%8F%84)
+- [기대 효과](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B8%B0%EB%8C%80-%ED%9A%A8%EA%B3%BC)
+- [프로젝트 기여도](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B8%B0%EC%97%AC%EB%8F%84)
 <hr/>
 
 ## 개요
