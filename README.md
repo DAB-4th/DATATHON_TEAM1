@@ -110,6 +110,7 @@
 
 ### <s>8. FA 계약으로 이적한 선수는 잔류한 선수보다 유의미하게 높은 연평균 연봉을 받았을 것이다.</s>
 - <b>*가설 2번과 통합하였음*</b>
+- [가설 2번](https://github.com/DAB-4th/DATATHON_TEAM1/blob/main/README.md#2-%EC%9D%B4%EC%A0%81%ED%95%9C-%EC%84%A0%EC%88%98%EB%93%A4%EC%9D%B4-%EC%9E%94%EB%A5%98%ED%95%9C-%EC%84%A0%EC%88%98%EB%93%A4%EC%97%90-%EB%B9%84%ED%95%B4-%EC%9C%A0%EC%9D%98%EB%AF%B8%ED%95%98%EA%B2%8C-%EB%86%92%EC%9D%80-fa-%EC%B4%9D%EC%95%A1%EC%9D%84-%EC%9F%81%EC%B7%A8%ED%96%88%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4)
   
 ### 9. FA선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다.
 - 분석 방법
