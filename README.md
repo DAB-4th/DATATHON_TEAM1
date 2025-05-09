@@ -1,15 +1,20 @@
-# DATATHON_TEAM1 - "Perfect-Game"
-
+<hr/>
 
 # FA 선수의 성과 기반 시장 가치 예측 모델링
 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
 <img src="https://img.shields.io/badge/jupyter-%23F37626.svg?&style=for-the-badge&logo=jupyter&logoColor=white"/>
+
+<p align='center'>
+<img src="https://upload.wikimedia.org/wikipedia/ko/thumb/7/79/Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg/1024px-Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg.png" height="123" width="342">
+</p>
+<hr/>
 
 ## 목차
 - [개요](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%9C%EC%9A%94)
 - [프로젝트 설명](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EB%AA%85)
 - [가설](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%80%EC%84%A4)
 - [딥러닝 및 머신러닝](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B0%8F-%EB%94%A5%EB%9F%AC%EB%8B%9D)
+<hr/>
 
 ## 개요
 - 프로젝트 이름 : FA 선수의 성과 기반 시장 가치 예측 모델링
@@ -17,33 +22,37 @@
 - 개발 엔진 및 언어 : Jupyter (with Colab)
 - 멤버 : 팀 퍼펙트게임 (강상민, 신은서, 이선엽, 이정태, 표룡희)
 
+<hr/>
+
 ## 프로젝트 설명
-
-<p align='center'>
-<img src="https://upload.wikimedia.org/wikipedia/ko/thumb/7/79/Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg/1024px-Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg.png" height="123" width="342">
-
-
-
-</p>
 
 ### FA 선수의 성과 기반 시장 가치 예측 모델링
 
 성과 대비 과대/과소평가된 사례 분석을 통해 **FA 시장의 비효율성**을 진단하며, 리그 전체의 자원 배분 효율성을 높이기 위한 데이터 기반의 의사결정을 도출하여, FA 전 성과를 기반으로 해당 선수의 **시장 가치(계약금) 예측 모델을 개발**하려는 목적을 가지고 있습니다.
 
-- 사용 데이터
+### 사용 데이터
   [KBO](https://www.koreabaseball.com) 및 [STATIZ](https://statiz.sporki.com/)의 데이터를 사용하였으며, 데이터는 2009~2024년 사이의 FA 승인 선수에 대한 데이터를 사용하였습니다.
 
-- 전처리
-  - 결측치 <br>
-  
-     ① 제거 파트
-     - 군 복무의 경우 선수 개인이 제어할 수 있는 영역이 아니라고 판단하였습니다.
-     - 누락의 경우 KBO/스탯티즈의 원본 데이터 자체의 누락이었습니다. <br>
-        → 대안이 존재하지 않았습니다.<br>
-     
-     ② 제거하지 않은 파트
-     - 부상 / 1군 미등록은 선수의 역량으로 판단하였습니다.
-  - 이상치 판단 <br>
+<hr/>
+
+### 사용 기술
+- Language : Python 3.11+
+- Library
+  - `pandas`, `numpy`, `scikit-learn`,
+  - `matplotlib`, `seaborn`
+  - `xgboost`, `lihgtbgm`, `shap`
+<hr/>
+
+### 전처리
+
+1. 결측치 <br>
+  ① 제거 파트
+    - 군 복무의 경우 선수 개인이 제어할 수 있는 영역이 아니라고 판단하였습니다.
+    - 누락의 경우 KBO/스탯티즈의 원본 데이터 자체의 누락이었습니다. <br>
+       → 대안이 존재하지 않았습니다.<br>
+ ② 제거하지 않은 파트
+    - 부상 / 1군 미등록은 선수의 역량으로 판단하였습니다.
+ 2. 이상치 판단 <br>
 
     Q3 + 1.5 * IQR을 크기 초과하는 이상치가 존재하였습니다.
     - 투수의 세이브
@@ -51,6 +60,7 @@
     - 이외 지표
     다만, 이는 그 선수의 역량이 좋아 생겨난 결과로 추정해, 비합리적인 이상치로 보기 어렵다는 판단.<br>
      → 이상치를 제거하지 않았습니다.
+<hr/>
 
 ## 가설 
 
@@ -149,3 +159,19 @@
 - 연도는 분류 모델로 전환해 예측.
    - 단위가 커, 소수점으로 나오는 에측치가 충분히 합리적인 FA 액수와 달리, 연도는 근본적으로 1.4년, 2.7년 등과 같은 소수점 단위가 나올 수 없는 구조이다.
    - 총액에 비해, 연도의 예측력이 매우 불안정하기 때문에, 이산적 데이터인 연도를 아예 분류 모델의 대상으로 취급해, 예측력을 높임.
+
+<hr/>
+## 기대 효과
+- 성과 기반 계약 모델의 실효성 확인
+- FA 제도의 투명성 확보 기여
+- 야구 산업 내 데이터 기반 의사결정 도입 사례 제시
+
+<hr/>
+## 프로젝트 기여도
+|이름|역할|
+|-----|-----|
+|강상민|데이터 분석, 모델링, 인사이트 도출|
+|신은서|데이터 분석, 데이터 시각화, 플로우 정리|
+|이선엽|데이터 수집 및 분석, 데이터 시각화|
+|이정태|데이터 분석 및 인사이트 도출|
+|표룡희|데이터 수집 및 분석, 인사이트 도출|
