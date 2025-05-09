@@ -209,6 +209,3 @@
 ### 4월 22일 오류 해결
 - IP 변경 후에야 스탯티즈 사이트 접속 가능
 - 스탯티즈 크롤링 지원 X, 너무 빠른 시간 내에 Drag & Drop하면 너무 많은 요청이 걸려 잠시 Ban이 될 수 있음        
-    
-    - 코드를 적기엔 너무 많아, 링크를 첨부
-        - [Code (Colab)](https://colab.research.google.com/drive/1gMtw9l-_hTc4Zn2OEPP7mkeVSUo_o20e?usp=sharing)
