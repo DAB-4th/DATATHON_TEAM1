@@ -128,74 +128,71 @@
 ## 가설 11. 교타자 보다 중장거리 타자 혹은 거포 타자가 FA 금액을 많이 받을 것이다. - (채택)
 ### 가설 11. 교타자보다 중장거리형 타자 혹은 거포형 타자가 FA 금액을 더 많이 받을 것이다. - (채택)
 
-    - 의미 설명
-        - 교타자 (Contact hitter)
-            - 장타보다는 단타를 많이 노리는 선수 or 정확하게 치는 선수 혹은 의도적으로 그렇게 치는 선수
-        - 중장거리형 타자 (Power hitter)
-            - 홈런보다는 2루타 등 장타를 많이 때려낼 수 있는 타자.
-        - 거포형 타자 (Slugger)
-            - 장타자. 홈런을 많이 때려낼 수 있는 선수
-        - [OBP (출루율)](https://library.fangraphs.com/offense/obp/)
-            - 타자가 출루를 얼마나 했는지 확인하는 지표
-        - [ISO (순장타율)](https://library.fangraphs.com/offense/iso/)
-            - 장타율에서 타율을 뺀, 장타만을 확인할 수 있는 지표
-        - [wRC+ (조정 득점 창출력)](https://library.fangraphs.com/offense/wrc/)
-            - 선수의 전반적인 공격 기여도를 보는 스탯이다. (기준을 100으로 두며, 115이면, 평균적인 타자들보다 15% 더 득점에 기여했다는 것을 의미)
-        
-    - 전처리
-        - 각 시즌 평균 스탯에 대한 CSV 파일을 가지고 와, 해당 선수가 활약한 해와 결합하여, 비교 후, 스탯-평균 ⇒ DIFF 칼럼을 생성.
-        - diff 칼럼을 통해, 각 시즌에 대한 값 비교 (타고투저 / 투고타저를 위하여 비교함)
-        - 이후, FA 전 4년 간의 기록을 가중치로 두어, FA 직전일 수록 가중치를 높여, 계산하였음.
-        - 이에 가중치 DIFF 칼럼으로 바꾸어, 해당 선수의 기록을 한 행으로 나타냄.
-        - 아래의 기준을 통해, 교타자 / 중장거리형 타자 / 거포형 타자를 구분하였음.
-        - 유형 기준
-            1. 교타자
-                - AVG_diff : 시즌 평균 + 0.02 이상
-                - OBP_diff : 시즌 평균 + 0.02 이상
-                - ISO_diff : 시즌 평균 -0.02 이상 + 0.03 미만
-                - wRC+ : 85 이상
-            2. 중장거리형 타자
-                - AVG_diff : 시즌 평균 - 0.005 이하
-                - OBP_diff : 시즌 평균 + 0.01 이상
-                - ISO_diff : 시즌 평균 + 0.03 이상 0.06 미만
-                - wRC+ : 95 이상
-            3. 거포형 타자
-                - AVG_diff : 시즌 평균 - 0.03 이상
-                - OBP_diff : 시즌 평균 + 0.01 이상
-                - ISO_diff : 시즌 평균 + 0.06 이상
-                - wRC+ : 120 이상
-        - 각 유형별 결과
-            1. 교타자
-               
-                ![교타자 AVG vs OBP](https://github.com/user-attachments/assets/34782107-b04f-4834-b696-d75a97bef11b)
+- 의미 설명
+    - 교타자 (Contact hitter)
+        - 장타보다는 단타를 많이 노리는 선수 or 정확하게 치는 선수 혹은 의도적으로 그렇게 치는 선수
+    - 중장거리형 타자 (Power hitter)
+        - 홈런보다는 2루타 등 장타를 많이 때려낼 수 있는 타자.
+    - 거포형 타자 (Slugger)
+        - 장타자. 홈런을 많이 때려낼 수 있는 선수
+    - [OBP (출루율)](https://library.fangraphs.com/offense/obp/)
+        - 타자가 출루를 얼마나 했는지 확인하는 지표
+    - [ISO (순장타율)](https://library.fangraphs.com/offense/iso/)
+        - 장타율에서 타율을 뺀, 장타만을 확인할 수 있는 지표
+    - [wRC+ (조정 득점 창출력)](https://library.fangraphs.com/offense/wrc/)
+        - 선수의 전반적인 공격 기여도를 보는 스탯이다. (기준을 100으로 두며, 115이면, 평균적인 타자들보다 15% 더 득점에 기여했다는 것을 의미)
+    
+- 전처리
+    - 각 시즌 평균 스탯에 대한 CSV 파일을 가지고 와, 해당 선수가 활약한 해와 결합하여, 비교 후, 스탯-평균 ⇒ DIFF 칼럼을 생성.
+    - diff 칼럼을 통해, 각 시즌에 대한 값 비교 (타고투저 / 투고타저를 위하여 비교함)
+    - 이후, FA 전 4년 간의 기록을 가중치로 두어, FA 직전일 수록 가중치를 높여, 계산하였음.
+    - 이에 가중치 DIFF 칼럼으로 바꾸어, 해당 선수의 기록을 한 행으로 나타냄.
+    - 아래의 기준을 통해, 교타자 / 중장거리형 타자 / 거포형 타자를 구분하였음.
+    - 유형 기준
+        1. 교타자
+        - AVG_diff : 시즌 평균 + 0.02 이상
+            - OBP_diff : 시즌 평균 + 0.02 이상
+            - ISO_diff : 시즌 평균 -0.02 이상 + 0.03 미만
+            - wRC+ : 85 이상
+        2. 중장거리형 타자
+            - AVG_diff : 시즌 평균 - 0.005 이하
+            - OBP_diff : 시즌 평균 + 0.01 이상
+            - ISO_diff : 시즌 평균 + 0.03 이상 0.06 미만
+            - wRC+ : 95 이상
+        3. 거포형 타자
+            - AVG_diff : 시즌 평균 - 0.03 이상
+            - OBP_diff : 시즌 평균 + 0.01 이상
+            - ISO_diff : 시즌 평균 + 0.06 이상
+            - wRC+ : 120 이상
+    - 각 유형별 결과
+        1. 교타자
+           
+            ![교타자 AVG vs OBP](https://github.com/user-attachments/assets/34782107-b04f-4834-b696-d75a97bef11b)
 
-                ![교타자 FA & wRC+](https://github.com/user-attachments/assets/25938092-5b81-4042-be3a-68097b56e19d)
+            ![교타자 FA & wRC+](https://github.com/user-attachments/assets/25938092-5b81-4042-be3a-68097b56e19d)
+
+        2. 중장거리형 타자
+                
+            ![중장거리형 타자 AVG vs OBP](https://github.com/user-attachments/assets/f114667a-48a7-4c12-9da0-77aff5c4c3c8)
+
+            ![중장거리형 타자 FA & wRC+](https://github.com/user-attachments/assets/fb13ff04-85fe-45c4-9300-40f48845122a)
 
             
-            2. 중장거리형 타자
+        3. 거포형 타자
                 
-                ![중장거리형 타자 AVG vs OBP](https://github.com/user-attachments/assets/f114667a-48a7-4c12-9da0-77aff5c4c3c8)
+           ![거포형 타자 AVG vs OBP](https://github.com/user-attachments/assets/cff860be-bf54-467e-8105-b6888e441e43)
 
-                ![중장거리형 타자 FA & wRC+](https://github.com/user-attachments/assets/fb13ff04-85fe-45c4-9300-40f48845122a)
+           ![거포형 타자 FA & wRC+](https://github.com/user-attachments/assets/9320f785-b162-4d0b-adcc-73da7bdcd078)
 
-            
-            3. 거포형 타자
-                
-                ![거포형 타자 AVG vs OBP](https://github.com/user-attachments/assets/cff860be-bf54-467e-8105-b6888e441e43)
-
-                ![거포형 타자 FA & wRC+](https://github.com/user-attachments/assets/9320f785-b162-4d0b-adcc-73da7bdcd078)
-
-        ![FA 선수 유형별 비율](https://github.com/user-attachments/assets/5b75994c-4a67-41cd-a1ba-d48b85fe37b5)
+  ![FA 선수 유형별 비율](https://github.com/user-attachments/assets/5b75994c-4a67-41cd-a1ba-d48b85fe37b5)
         
-        ![FA 선수 유형별 평균 계약 총액과 년수 비교](https://github.com/user-attachments/assets/96a04018-aba5-42a7-9a2b-c8bfb46ef61b)
+  ![FA 선수 유형별 평균 계약 총액과 년수 비교](https://github.com/user-attachments/assets/96a04018-aba5-42a7-9a2b-c8bfb46ef61b)
  
-        ![교타자 VS 중장거리형 타자와 거포형 타자 FA 계약 총액 분포](https://github.com/user-attachments/assets/4127c577-810d-400f-8f61-a093957b5d7b)
+  ![교타자 VS 중장거리형 타자와 거포형 타자 FA 계약 총액 분포](https://github.com/user-attachments/assets/4127c577-810d-400f-8f61-a093957b5d7b)
       
-        - 정규성 검정 시행 후, 등분상 가정을 사용하였을 때, 0.0377로 0.05 이하이기에, 귀무가설을 기각하여, 해당 가설이 통계적으로 옳음을 나타내었다.
+  - 정규성 검정 시행 후, 등분상 가정을 사용하였을 때, 0.0377로 0.05 이하이기에, 귀무가설을 기각하여, 해당 가설이 통계적으로 옳음을 나타내었다.
         
-        ![가설 검정(등분산 가정)](https://github.com/user-attachments/assets/00dac4d6-bbd8-44d7-b94f-a6c1c4d26d47)
-
- 
+  ![가설 검정(등분산 가정)](https://github.com/user-attachments/assets/00dac4d6-bbd8-44d7-b94f-a6c1c4d26d47)
 
 - - -
 
