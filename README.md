@@ -18,7 +18,14 @@
 
 ## 프로젝트 설명
 
-**FA 선수의 성과 기반 시장 가치 예측 모델링**
+<p align='center'>
+<img src="https://upload.wikimedia.org/wikipedia/ko/thumb/7/79/Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg/1024px-Korea_Baseball_Organization_-_2022_logo_with_wordmark_horizontal.svg.png" height="123" width="342">
+
+
+
+</p>
+
+### **FA 선수의 성과 기반 시장 가치 예측 모델링**
 
 성과 대비 과대/과소평가된 사례 분석을 통해 **FA 시장의 비효율성**을 진단하며, 리그 전체의 자원 배분 효율성을 높이기 위한 데이터 기반의 의사결정을 도출하여, FA 전 성과를 기반으로 해당 선수의 **시장 가치(계약금) 예측 모델을 개발**하려는 목적을 가지고 있습니다.
 
