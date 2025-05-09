@@ -1,6 +1,46 @@
 # DATATHON_TEAM1
 
+- - - 
+### 가설 3: 구원 투수(일명 불펜 투수)는 다른 포지션에 비해 FA 가격이 낮을 것이다.
 
+- 구원 투수 포지션 : RP (중간 계투), CP (마무리 투수)
+    - 선발 투수 포지션 : SP
+- 각 포지션 별 FA 금액의 평균을 사용
+    - 모든 포지션과 불펜 투수 내에서도 세부 포지션을 나누어, 각 포지션 별 FA 금액 평균을 구분
+    - 불펜 투수(RP, CP) 그룹과 이외 그룹으로 나누어, 그룹별 FA 금액 평균을 구분
+        - 실제 금액 차이
+            - 포지션당 평균  FA 금액
+            
+            ![포지션당 평균 FA 금액 (막대)](https://github.com/user-attachments/assets/e51d8bf4-d928-48bf-91ac-bf2fd77d0195)        
+
+            ![포지션당 평균 FA 금액 (Box Plot)](https://github.com/user-attachments/assets/877a2697-b115-45da-a34b-20d3f11a8f3d)
+
+                - ANOVA 검정 시행
+          
+                  ![포지션당 평균 FA 금액_ANOVA 검정](https://github.com/user-attachments/assets/5abcfe67-0b3c-4ddc-b728-30ea9eedf8ab)
+            
+            - 불펜 그룹과 이외 그룹
+            
+            ![불펜 그룹과 이외 그룹의 평균 FA 금액 (막대)](https://github.com/user-attachments/assets/181f0b54-4459-40e6-94e3-01b0f7474be1)
+
+            ![불펜 그룹과 이외 그룹의 평균 FA 금액 (Box Plot)](https://github.com/user-attachments/assets/1ba1fdaf-f0d9-494c-b83c-e1d6291342a6)
+
+                - T-검정 시행
+        
+                  ![불펜 그룹과 이외 그룹_T 검정](https://github.com/user-attachments/assets/b583986a-ceb2-4d3d-b059-fb831ce5f16f)
+
+            
+            ⇒ 불펜이 확실하게 FA 금액을 적게 받는 영향이 있다.
+            
+            → 확실히, FA 까지 가게 된 선수의 경우, 필승조(의 역할을 많이 보여주고 있기 때문에, 많은 등판, 많은 이닝을 소화하게 된다. 
+            
+            → 이 때문에, 몸에 부하가 많이 쌓인 상태이며, FA 이후 시즌의 부상의 위험이 크기 때문에, 이를 고려하여, FA 금액이 작아질 수 밖에 없다.
+            
+            - CP(마무리 투수)의 경우는, 나올 수 있는 상황이 제한되어 있고, 고정적인 이닝에 등판할 가능성이 높아, 관리가 매우 원활하다.
+            
+            → 따라서, 부상의 위험이 불펜 투수들보다는 훨씬 덜 하고, 마무리 투수의 보직 자체가 리그에서 가장 강력한 투수를 마지막에 사용하기 때문에, FA 금액이 올라갈 수 밖에 없다.
+
+- - -
 
 ## 가설 9. FA선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다.
 ### 가설 9:  FA선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다.
