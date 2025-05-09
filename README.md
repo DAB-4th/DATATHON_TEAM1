@@ -2,8 +2,8 @@
 
 ## 목차 (가설 3개 설정)
 1. [가설 3 - 기각](https://github.com/DAB-4th/DATATHON_TEAM1/tree/%ED%91%9C%EB%A3%A1%ED%9D%AC?tab=readme-ov-file#%EA%B0%80%EC%84%A4-3-%EA%B5%AC%EC%9B%90-%ED%88%AC%EC%88%98%EC%9D%BC%EB%AA%85-%EB%B6%88%ED%8E%9C-%ED%88%AC%EC%88%98%EB%8A%94-%EB%8B%A4%EB%A5%B8-%ED%8F%AC%EC%A7%80%EC%85%98%EC%97%90-%EB%B9%84%ED%95%B4-fa-%EA%B0%80%EA%B2%A9%EC%9D%B4-%EB%82%AE%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4)
-2. [가설 9 - 채택](https://github.com/DAB-4th/DATATHON_TEAM1/tree/%ED%91%9C%EB%A3%A1%ED%9D%AC?tab=readme-ov-file#%EA%B0%80%EC%84%A4-9-fa%EC%84%A0%EC%88%98%EA%B0%80-%EB%90%98%EC%96%B4-%EC%97%B0%EB%B4%89%EC%9D%B4-%EC%98%A4%EB%A5%B8-%EC%84%A0%EC%88%98%EC%9D%98-%EA%B2%BD%EC%9A%B0-%EC%B0%A8%EA%B8%B0-%EB%85%84%EB%8F%84-%EC%84%B1%EC%A0%81%EC%9D%B4-%EC%A2%8B%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4)
-3. [가설 11 - 채택](https://github.com/DAB-4th/DATATHON_TEAM1/tree/%ED%91%9C%EB%A3%A1%ED%9D%AC?tab=readme-ov-file#%EA%B0%80%EC%84%A4-11-%EA%B5%90%ED%83%80%EC%9E%90-%EB%B3%B4%EB%8B%A4-%EC%A4%91%EC%9E%A5%EA%B1%B0%EB%A6%AC-%ED%83%80%EC%9E%90-%ED%98%B9%EC%9D%80-%EA%B1%B0%ED%8F%AC-%ED%83%80%EC%9E%90%EA%B0%80-fa-%EA%B8%88%EC%95%A1%EC%9D%84-%EB%A7%8E%EC%9D%B4-%EB%B0%9B%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4)
+2. [가설 9 - 채택](https://github.com/DAB-4th/DATATHON_TEAM1/tree/%ED%91%9C%EB%A3%A1%ED%9D%AC?tab=readme-ov-file#%EA%B0%80%EC%84%A4-9-fa%EC%84%A0%EC%88%98%EA%B0%80-%EB%90%98%EC%96%B4-%EC%97%B0%EB%B4%89%EC%9D%B4-%EC%98%A4%EB%A5%B8-%EC%84%A0%EC%88%98%EC%9D%98-%EA%B2%BD%EC%9A%B0-%EC%B0%A8%EA%B8%B0-%EB%85%84%EB%8F%84-%EC%84%B1%EC%A0%81%EC%9D%B4-%EC%A2%8B%EC%9D%84-%EA%B2%83%EC%9D%B4%EB%8B%A4---%EC%B1%84%ED%83%9D)
+3. [가설 11 - 채택]()
 
 * [수정사항](https://github.com/DAB-4th/DATATHON_TEAM1/tree/%ED%91%9C%EB%A3%A1%ED%9D%AC?tab=readme-ov-file#%EC%88%98%EC%A0%95%EC%82%AC%ED%95%AD)
 - - -
@@ -127,6 +127,7 @@
 - - - 
 ## 가설 11. 교타자 보다 중장거리 타자 혹은 거포 타자가 FA 금액을 많이 받을 것이다. - (채택)
 ### 가설 11. 교타자보다 중장거리형 타자 혹은 거포형 타자가 FA 금액을 더 많이 받을 것이다. - (채택)
+
     - 의미 설명
         - 교타자 (Contact hitter)
             - 장타보다는 단타를 많이 노리는 선수 or 정확하게 치는 선수 혹은 의도적으로 그렇게 치는 선수
