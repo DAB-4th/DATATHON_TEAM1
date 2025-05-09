@@ -5,10 +5,10 @@
 <img src="https://img.shields.io/badge/jupyter-%23F37626.svg?&style=for-the-badge&logo=jupyter&logoColor=white"/>
 
 ## 목차
-- [개요](https://github.com/DAB-4th/DATATHON_TEAM1/edit/main/README.md#%EA%B0%9C%EC%9A%94)
-- [프로젝트 설명](https://github.com/DAB-4th/DATATHON_TEAM1/edit/main/README.md#%EA%B0%9C%EC%9A%94)
-- [가설](https://github.com/DAB-4th/DATATHON_TEAM1/edit/main/README.md#%EA%B0%80%EC%84%A4)
-- [딥러닝](https://github.com/DAB-4th/DATATHON_TEAM1/edit/main/README.md#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B0%8F-%EB%94%A5%EB%9F%AC%EB%8B%9D)
+- [개요](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%9C%EC%9A%94)
+- [프로젝트 설명](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EB%AA%85)
+- [가설](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EA%B0%80%EC%84%A4)
+- [딥러닝 및 머신러닝](https://github.com/DAB-4th/DATATHON_TEAM1?tab=readme-ov-file#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%B0%8F-%EB%94%A5%EB%9F%AC%EB%8B%9D)
 
 ## 개요
 - 프로젝트 이름 : FA 선수의 성과 기반 시장 가치 예측 모델링
