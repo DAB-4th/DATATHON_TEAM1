@@ -2,6 +2,7 @@
 
 
 # FA 선수의 성과 기반 시장 가치 예측 모델링
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
 <img src="https://img.shields.io/badge/jupyter-%23F37626.svg?&style=for-the-badge&logo=jupyter&logoColor=white"/>
 
 ## 목차
