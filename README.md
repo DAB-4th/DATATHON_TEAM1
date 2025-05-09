@@ -76,7 +76,8 @@
         ⇒ 투수, 야수 모두 성적과 관련하여 귀무가설이 채택되어, FA 선수가 되어 연봉이 오른 선수의 경우 차기 년도 성적이 좋을 것이다 라는 가설은 틀리게 됩니다. 
         
         ⇒ 아마 FA 금액이 오른 선수들은 성적을 제외하고도, 여러 가지 복합 요인들로 인하여, FA 가격이 예상보다 오르게 되었고, 각 해의 컨디션에 따라 성적이 좌지우지 된다. (부상 포함)
-        
+
+- - - 
 ## 가설 11. 교타자 보다 중장거리 타자 혹은 거포 타자가 FA 금액을 많이 받을 것이다.
 
 - 가설 11. 교타자보다 중장거리형 타자 혹은 거포형 타자가 FA 금액을 더 많이 받을 것이다.
@@ -140,14 +141,16 @@
         ![FA 선수 유형별 비율](https://github.com/user-attachments/assets/5b75994c-4a67-41cd-a1ba-d48b85fe37b5)
         
         ![FA 선수 유형별 평균 계약 총액과 년수 비교](https://github.com/user-attachments/assets/96a04018-aba5-42a7-9a2b-c8bfb46ef61b)
-
+ 
+        ![교타자 VS 중장거리형 타자와 거포형 타자 FA 계약 총액 분포](https://github.com/user-attachments/assets/4127c577-810d-400f-8f61-a093957b5d7b)
+      
         - 정규성 검정 시행 후, 등분상 가정을 사용하였을 때, 0.0377로 0.05 이하이기에, 귀무가설을 기각하여, 해당 가설이 통계적으로 옳음을 나타내었다.
         
         ![가설 검정(등분산 가정)](https://github.com/user-attachments/assets/00dac4d6-bbd8-44d7-b94f-a6c1c4d26d47)
 
  
 
-
+- - -
 
 
 ## 수정사항.
@@ -161,10 +164,7 @@
 
 ### 4월 22일 오류 해결
 - IP 변경 후에야 스탯티즈 사이트 접속 가능
-- 스탯티즈 크롤링 지원 X, 너무 빠른 시간 내에 Drag & Drop하면 너무 많은 요청이 걸려 잠시 Ban이 될 수 있음
-        
-        ![교타자 VS 중장거리형 타자와 거포형 타자 FA 계약 총액 분포.png](attachment:67ddb4d4-f98d-4fca-95f2-9b72c2f5c0ec:교타자_VS_중장거리형_타자와_거포형_타자_FA_계약_총액_분포.png)
-        
+- 스탯티즈 크롤링 지원 X, 너무 빠른 시간 내에 Drag & Drop하면 너무 많은 요청이 걸려 잠시 Ban이 될 수 있음        
     
     - 코드를 적기엔 너무 많아, 링크를 첨부
         - [Code (Colab)](https://colab.research.google.com/drive/1gMtw9l-_hTc4Zn2OEPP7mkeVSUo_o20e?usp=sharing)
