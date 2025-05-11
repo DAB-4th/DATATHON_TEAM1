@@ -43,7 +43,7 @@
 - Library
   - `pandas`, `numpy`, `scikit-learn`,
   - `matplotlib`, `seaborn`
-  - `xgboost`, `lihgtbgm`, `shap`
+  - `xgboost`, `randomforest`, `keras`, `shap`
 <hr/>
 
 ### 전처리
