@@ -1,0 +1,59 @@
+# selenium 가동을 위해 필요한 패키지 설치
+
+%%capture
+!apt-get update --pp
+!apt-get --qqy wget unzip
+!wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+!dpkg -i google-chrome-stable_current_amd64.deb
+!apt --fix-broken install -y
+!pip install webdriver-manager
+!pip install selenium
+
+# selenium과 beautifulsoup를 활용한 크롤링 시도
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from bs4 import BeautifulSoup
+from lxml import etree
+import pandas as pd
+import time
+
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')            
+options.add_argument('--no-sandbox')       
+options.add_argument('--disable-dev-shm-usage')
+options.add_argument('--start-maximized') 
+
+driver_path = ChromeDriverManager().install()
+service = Service(driver_path)
+driver = webdriver.Chrome(service=service, options=options)
+
+players = {
+    '이호준': 10101,
+    '홍성흔': 10256,
+    '김주찬': 10239
+}
+
+for name, pid in players.items():
+  driver.get(f"https://statiz.sporki.com/player/?m=year&p_no={pid}")
+
+  wait = WebDriverWait(driver, 60)
+  table_div = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div[5]/section/div[5]/table")))
+
+  table_div = driver.find_element("xpath", "/html/body/div[2]/div[5]/section/div[5]")
+  html = table_div.get_attribute("outerHTML")
+
+  rows = table.find_all("tr")
+
+    for row in rows :
+       cols = row.find_all(["th", "td"])
+       print([col.get_text(strip=True) for col in cols])
+
+  dfs = pd.read_html(html)  
+
+# 사이트의 IP 차단으로 인해 스탯티즈 크롤링 시도 중단
+# 403 Forbidden - Your IP is blocked
